@@ -1,0 +1,19 @@
+; Questo programma contiene un'istruzione non riconosciuta dalla macchina virtuale.
+; Il progetto segnala un errore.
+
+15
+12; mov r31 31
+31
+31
+12; mov r21 21
+21
+21
+31; sub r21 r31
+21
+31
+11; pop r0
+0;
+1; display r0
++0
+69; istruzione non valida
+0; halt

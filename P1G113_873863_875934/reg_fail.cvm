@@ -1,0 +1,7 @@
+; Questo programma dimostrativo tenta di accedere ad un registro inesistente.
+; Il progetto segnala un errore.
+
+3
+1; display r32
+32;
+0; halt

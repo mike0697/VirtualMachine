@@ -1,0 +1,53 @@
+43
+
+; main:
+	12; [0] mov r0 X
+	00; [1]
+	20; [2] #da personalizzare
+	20; [3] call print_cubes
+	06; [4]
+	00; [5] halt
+
+; print_cubes:
+	10; [6] push r0
+	00; [7]
+	25; [8] jneg return
+	42; [9]
+	12; [10] mov r1 1
+	01; [11]
+	01; [12]
+	12; [13] mov r2 1
+	02; [14]
+	01; [15]
+	12; [16] mov r3 3
+	03; [17]
+	03; [18]
+; init_loop:
+	32; [19] mul r0 r2
+	00; [20]
+	02; [21]
+	11; [22] pop r2
+	02; [23]
+	31; [24] sub r3 r1
+	03; [25]
+	01; [26]
+	11; [27] pop r3
+	03; [28]
+	10; [29] push r3
+	03; [30]
+	24; [31] jpos init_loop
+	19; [32]
+; exit_loop:
+	01; [33] display r2
+	02; [34]
+	31; [35] sub r0 r1
+	00; [36]
+	01; [37]
+	11; [38] pop r0
+	00; [39]
+	20; [40] call print_cubes
+	06; [41]
+; return:
+	21; [42] ret
+
+; end

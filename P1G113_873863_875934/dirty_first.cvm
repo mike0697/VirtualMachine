@@ -1,0 +1,7 @@
+; Questo programma dimostrativo presenta una sintassi scorretta nel numero di celle da allocare.
+; Il progetto segnala un errore.
+
+A3;
+2
+2
+0;

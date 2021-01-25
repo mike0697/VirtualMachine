@@ -1,0 +1,16 @@
+; Questo programma dimostrativo tenta di eseguire un salto fuori dall'array di istruzioni.
+; Il progetto segnala un errore.
+
+12
+12; mov r12 144
+12
+144
+32; mul r12 r12
+12
+12
+11; pop r12
+12
+1; display r12
+12
+22; jmp -1
+-1;

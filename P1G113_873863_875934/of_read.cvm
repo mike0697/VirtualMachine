@@ -1,0 +1,10 @@
+; Questo programma dimostrativo presenta un numero non rappresentabile nel tipo int.
+; Il progetto segnala un errore.
+
+6
+12; mov r0 1,000,000,000,000
+0
+1000000000000
+1; display r0
+0
+0 ; halt

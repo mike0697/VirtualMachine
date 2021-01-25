@@ -1,0 +1,3 @@
+; Questo programma dimostrativo tenta di allocare un numero non positivo di istruzioni.
+; Il progetto segnala un errore.
+-3;

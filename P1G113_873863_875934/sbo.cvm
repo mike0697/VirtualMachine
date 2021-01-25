@@ -1,0 +1,17 @@
+; Questo programma dimostrativo causa stack overflow gestendo male la ricorsione.
+; Il progetto segnala un errore.
+
+11
+20; call (riga 43)
+3
+0; halt
+
+; La seguente riga è la riga 3
+	12; mov r0 15
+	0
+	15
+	1; display r0
+	0
+	20; call (riga 3)
+	3
+	21; ret

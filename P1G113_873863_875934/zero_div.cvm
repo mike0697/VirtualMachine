@@ -1,0 +1,22 @@
+; Questo programma dimostrativo tenta di eseguire una divisione per zero.
+; Il progetto segnala un errore.
+
+14
+12; mov r0 0;
+0
+0
+12; mov r1 39
+1
+39
+1; display r1
+1;
+1; display r0
+ 0
+33; div r1 r0
+1
+0
+11; pop r2
+2
+1; display r2
+2
+0; halt

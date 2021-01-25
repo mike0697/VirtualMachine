@@ -1,0 +1,6 @@
+; Questo programma dimostrativo ha un'ultima istruzione che richiede più parametri di quelli trovati.
+; Il progetto segnala un errore.
+
+1
+1; display
+; parametro mancante

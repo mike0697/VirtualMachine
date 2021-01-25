@@ -1,0 +1,40 @@
+; Questo programma non produce errori, ma termina senza eseguire l'istruzione di HALT.
+; Il progetto segnala che il programma può essere terminato in maniera indesiderata.
+
+31
+; main:
+	12;	[0] mov r0 0
+	0;	[1]
+	0;	[2]
+	12;	[3] mov r1 1
+	1;	[4]
+	1;	[5]
+	12;	[6] mov r2 10
+	2;	[7]
+	10;	[8]
+	31;	[9] sub r0 r2
+	0;	[10]
+	2;	[11]
+	24;	[12] jpos 29 (exit_loop)
+	29;	[13] (exit_loop)
+; init_loop:
+	32;	[14] mul r0 r0
+	0;	[15]
+	0;	[16]
+	30;	[17] add r0 r1
+	0;	[18]
+	1;	[19]
+	11;	[20] pop r0
+	0;	[21]
+	31;	[22] sub r0 r2
+	0;	[23]
+	2;	[24]
+	24;	[25] jpos 29 (exit_loop)
+	29;	[26] (exit_loop)
+	22;	[27] jmp 14 (init_loop)
+	14;	[28]
+; exit_loop:
+	2;	[29] print_stack 10
+	10;	[30]
+
+; manca halt, codice 0

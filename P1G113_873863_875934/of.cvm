@@ -1,0 +1,20 @@
+; Questo programma dimostrativo produce overflow in fase di esecuzione.
+; Il progetto segnala un errore.
+
+16
+12; mov r0 21;
+0
+21
+1; display r0
+0
+12; mov r1 2,000,000,000
+1
+2000000000
+30; add r1 r1
+1
+1
+11; pop r0
+0
+1; display r0
+0
+0; halt

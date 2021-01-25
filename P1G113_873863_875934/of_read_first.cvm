@@ -1,0 +1,3 @@
+; Questo programma dimostrativo tenta di allocare un numero eccessivo di celle.
+; Il progetto segnala un errore.
+1000000000000; Supponendo di rappresentare il tipo int con 4 B, non è possibile rappresentare questo numero.

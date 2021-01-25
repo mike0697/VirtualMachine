@@ -1,0 +1,7 @@
+; Questo programma dimostrativo tenta di eseguire pop su stack vuoto.
+; Il progetto segnala un errore.
+
+3
+11; pop r0
+0
+0; halt
